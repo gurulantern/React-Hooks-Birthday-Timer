@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Ultra&display=swap');
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to left, #2C6BD3, #2CBFD3, #2CD394);
+  margin: 0
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #c8374f 50%, #5960D9 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1000px;
+  min-height: 1000px;
+}
+
+.timer {
+  text-align: center;
+  color: white;
+  min-width: 1000px;
+  min-height: 60px;
+  background-color: #D76228;
+  margin: 30px;
+  padding: 2vmin;
+  padding-top: 2.5vmin;
+  border-radius: 30px;
+  box-shadow: 1px 1px 40px gold;
+  font-family: 'Lemon', cursive;
+  font-size: 1.7rem;
+}
+
+.Birthday {
+  animation:boom 1s infinite;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: 'Ultra', serif;
+  color: white;
+  text-align: center;
+}
+
+.form {
+  font-family: 'Lemon', cursive;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+/* .button {
+  font-family: 'Lemon', cursive;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #D76228;
+  box-shadow: 1px 1px 40px gold;
+  color: white;
+} */
+
+.date-input {
+  padding: 5px;
+  margin: 1vmin;
+  font-family: 'Lemon', cursive;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+@keyframes boom {
+  0% {
+    font-size: scale(0.8);
+  }
+  20% {
+    font-size: scale(1);
+  }
+  60% {
+    font-size: scale(0.8);
+  }
+  100% {
+    font-size: scale(1);
+  }
+}
